@@ -10,7 +10,10 @@ driver.get("https://www.google.com")
 loc1= driver.find_element(By.CLASS_NAME,'gLFyf')
 loc1.send_keys("Selenium")
 loc1.send_keys(Keys.ENTER)
-time.sleep(5)
+time.sleep(10)
 loc2= driver.find_element(By.XPATH,"//*[contains(@class,'iUh30 tjvcx')]").click()
-time.sleep(5)
+time.sleep(10)
 
+def test_title():
+    x=driver.title
+    assert x=="fffff"
