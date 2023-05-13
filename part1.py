@@ -14,6 +14,3 @@ time.sleep(10)
 loc2= driver.find_element(By.XPATH,"//*[contains(@class,'iUh30 tjvcx')]").click()
 time.sleep(10)
 
-def test_title():
-    x=driver.title
-    assert x=="fffff"
